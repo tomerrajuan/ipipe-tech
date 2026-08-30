@@ -1,0 +1,59 @@
+@import "@fontsource-variable/outfit/wght.css";
+@import "@fontsource/instrument-serif";
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Instrument Serif", ui-serif, Georgia, serif;
+
+  --color-abyss: #04141c;
+  --color-navy: #0b2430;
+  --color-ink: #102027;
+  --color-muted: #5b6d74;
+  --color-line: #d7e2de;
+  --color-paper: #f4f7f6;
+  --color-cream: #ffffff;
+  --color-foam: #e7f3ef;
+  --color-water: #1a8cff;
+  --color-water-deep: #0e5fd4;
+  --color-teal: #1aa38f;
+  --color-mist: #8aa0a8;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #cfe4ff;
+  color: var(--color-ink);
+}
+
+.grid-overlay {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.water-glow {
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(26, 140, 255, 0.22), transparent 58%),
+    radial-gradient(ellipse 40% 40% at 80% 80%, rgba(26, 163, 143, 0.16), transparent 60%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
