@@ -3,17 +3,14 @@ import { Link, NavLink } from "react-router-dom"
 import { Menu, X } from "lucide-react"
 import { asset, company, nav } from "../data"
 
-export function Logo({ onDark = false }: { onDark?: boolean }) {
+export function Logo() {
   return (
-    <Link to="/" className="flex items-center gap-2.5">
+    <Link to="/" className="flex items-center">
       <img
         src={asset("images/logo.jpg")}
         alt={company.name}
         className="h-10 w-auto"
       />
-      <span className={`hidden text-sm font-semibold tracking-tight sm:block ${onDark ? "text-white" : "text-ink"}`}>
-        iPIPE
-      </span>
     </Link>
   )
 }
@@ -37,23 +34,21 @@ export function Nav() {
   }, [open])
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50">
-      <div
-        className={`mx-auto flex max-w-6xl items-center justify-between px-5 py-3 transition-all duration-300 sm:px-6 ${
-          scrolled || open
-            ? "mt-3 rounded-2xl border border-white/10 bg-abyss/80 shadow-[0_12px_40px_rgba(4,20,28,0.28)] backdrop-blur-md"
-            : "bg-transparent"
-        }`}
-      >
-        <Logo onDark />
-        <nav className="hidden items-center gap-7 text-sm text-white/70 lg:flex">
+    <header
+      className={`fixed inset-x-0 top-0 z-50 border-b bg-cream transition-shadow duration-300 ${
+        scrolled ? "border-line shadow-[0_8px_30px_rgba(16,32,39,0.06)]" : "border-line/70"
+      }`}
+    >
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3 sm:px-6">
+        <Logo />
+        <nav className="hidden items-center gap-7 text-sm text-muted lg:flex">
           {nav.map((item) => (
             <NavLink
               key={item.to}
               to={item.to}
               end={item.to === "/"}
               className={({ isActive }) =>
-                `transition-colors hover:text-white ${isActive ? "text-white" : ""}`
+                `transition-colors hover:text-ink ${isActive ? "font-medium text-ink" : ""}`
               }
             >
               {item.label}
@@ -69,7 +64,7 @@ export function Nav() {
           </Link>
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full text-white lg:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full text-ink lg:hidden"
             aria-label={open ? "Close menu" : "Open menu"}
             onClick={() => setOpen((v) => !v)}
           >
@@ -79,7 +74,7 @@ export function Nav() {
       </div>
 
       {open && (
-        <div className="mx-5 mt-2 rounded-2xl border border-white/10 bg-abyss/95 p-4 backdrop-blur-md lg:hidden">
+        <div className="border-t border-line bg-cream px-5 py-3 lg:hidden">
           <nav className="flex flex-col gap-1">
             {nav.map((item) => (
               <NavLink
@@ -88,7 +83,7 @@ export function Nav() {
                 end={item.to === "/"}
                 onClick={() => setOpen(false)}
                 className={({ isActive }) =>
-                  `rounded-xl px-3 py-3 text-base ${isActive ? "bg-white/10 text-white" : "text-white/75"}`
+                  `rounded-xl px-3 py-3 text-base ${isActive ? "bg-foam text-ink" : "text-muted"}`
                 }
               >
                 {item.label}

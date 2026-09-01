@@ -8,7 +8,7 @@ export function About() {
       <PageHero
         eyebrow="About us"
         title="Built to keep potable water moving."
-        body="iPIPE Ltd is dedicated to transforming water management through in-pipe inspection. Our mission is safer, more efficient potable water networks — so communities keep access to clean, reliable water."
+        body="iPIPE Ltd is dedicated to transforming water management through in-pipe inspection. Our mission is safer, more efficient potable water networks, so communities keep access to clean, reliable water."
       />
 
       <section className="mx-auto max-w-6xl px-6 py-24">
@@ -25,7 +25,7 @@ export function About() {
 
         <Reveal className="mx-auto mt-16 max-w-3xl">
           <p className="text-lg leading-relaxed text-muted">
-            Our flagship devices — Neptune, Koi, and Dolphin — are mini wireless subs designed
+            Our flagship devices, Neptune, Koi, and Dolphin, are mini wireless subs designed
             to operate inside pressurized pipes. They detect leaks, corrosion, faulty welds,
             blockages, unauthorized connections, and unmapped network segments in real time.
           </p>
@@ -40,7 +40,7 @@ export function About() {
       <section className="border-y border-line bg-foam py-24">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
-            <h2 className="font-display text-4xl">The people building it</h2>
+            <h2 className="text-4xl font-semibold tracking-tight leading-[1.15]">The people building it</h2>
           </Reveal>
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
             {team.map((person) => (

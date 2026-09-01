@@ -31,7 +31,7 @@ export function Contact() {
     const email = String(data.get("email") ?? "")
     const message = String(data.get("message") ?? "")
     const subject = encodeURIComponent(`iPIPE inquiry from ${name}`)
-    const body = encodeURIComponent(`${message}\n\n— ${name}\n${email}`)
+    const body = encodeURIComponent(`${message}\n\n- ${name}\n${email}`)
     window.location.href = `mailto:${company.email}?subject=${subject}&body=${body}`
     setSent(true)
   }
@@ -41,12 +41,12 @@ export function Contact() {
       <PageHero
         eyebrow="Contact"
         title="Reach out for a survey, a pilot, or a partnership."
-        body="Whether you operate a water network or want to collaborate on research, we want to hear from you."
+        body="If you run a water network or want to collaborate on research, get in touch."
       />
 
       <section className="mx-auto grid max-w-6xl gap-12 px-6 py-24 lg:grid-cols-5">
         <Reveal className="lg:col-span-2">
-          <h2 className="font-display text-3xl">Contact iPIPE</h2>
+          <h2 className="text-3xl font-semibold tracking-tight">Contact iPIPE</h2>
           <p className="mt-4 text-muted">
             Expert support and solutions in water management. We typically reply by email.
           </p>
@@ -67,7 +67,7 @@ export function Contact() {
         <Reveal className="lg:col-span-3">
           {sent ? (
             <div className="rounded-3xl border border-line bg-foam px-8 py-16 text-center">
-              <p className="font-display text-3xl">Thank you for your message.</p>
+              <p className="text-3xl font-semibold tracking-tight">Thank you for your message.</p>
               <p className="mt-3 text-muted">Your email client should open so you can send it.</p>
             </div>
           ) : (
@@ -113,7 +113,7 @@ export function Contact() {
       </section>
 
       <section className="mx-auto max-w-3xl px-6 pb-24">
-        <h2 className="font-display text-3xl">Frequently asked questions</h2>
+        <h2 className="text-3xl font-semibold tracking-tight">Frequently asked questions</h2>
         <div className="mt-8">
           <Faq items={contactFaqs} />
         </div>

@@ -1,10 +1,8 @@
 @import "@fontsource-variable/outfit/wght.css";
-@import "@fontsource/instrument-serif";
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Outfit Variable", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Instrument Serif", ui-serif, Georgia, serif;
 
   --color-abyss: #04141c;
   --color-navy: #0b2430;
@@ -37,13 +35,6 @@ body {
 ::selection {
   background: #cfe4ff;
   color: var(--color-ink);
-}
-
-.grid-overlay {
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
-  background-size: 56px 56px;
 }
 
 .water-glow {

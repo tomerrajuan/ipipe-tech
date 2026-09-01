@@ -21,7 +21,7 @@ export const nav = [
 ]
 
 export const stats = [
-  { value: "4–30″", label: "Pipe diameter" },
+  { value: "4-30\"", label: "Pipe diameter" },
   { value: "50 bar", label: "Operating pressure" },
   { value: "10 km", label: "Inspection range" },
   { value: "Live", label: "Networks stay in service" },
@@ -31,7 +31,7 @@ export const pillars = [
   {
     n: "01",
     title: "Advanced leak detection",
-    body: "Real-time monitoring of water distribution networks so leaks and corrosion are found early — before they become failures, outages, or emergency replacements.",
+    body: "Real-time monitoring of water distribution networks so leaks and corrosion are found early, before they become failures, outages, or emergency replacements.",
   },
   {
     n: "02",
@@ -52,7 +52,7 @@ export const capabilities = [
   },
   {
     title: "Inspection",
-    body: "Carry visual, acoustic, pressure, temperature, flow, and other sensors — a platform for the measurements the network actually needs.",
+    body: "Carry visual, acoustic, pressure, temperature, flow, and other sensors. A platform for the measurements the network actually needs.",
   },
   {
     title: "Communication",
@@ -74,8 +74,8 @@ export const products = [
     slug: "neptune",
     name: "Neptune",
     role: "Tight networks",
-    diameter: "4″–8″",
-    diameterCm: "10–20 cm",
+    diameter: "4\"-8\"",
+    diameterCm: "10-20 cm",
     pressure: "Up to 50 bar",
     distance: "Up to 1 km",
     image: "images/neptune.jpg",
@@ -86,20 +86,20 @@ export const products = [
     slug: "koi",
     name: "Koi",
     role: "Mid-range mains",
-    diameter: "8″–12″",
-    diameterCm: "20–30 cm",
+    diameter: "8\"-12\"",
+    diameterCm: "20-30 cm",
     pressure: "Up to 50 bar",
     distance: "Up to 3 km",
     image: "images/koi.jpg",
     summary:
-      "The workhorse for typical urban distribution diameters — enough range and payload for routine condition surveys.",
+      "The workhorse for typical urban distribution diameters. Enough range and payload for routine condition surveys.",
   },
   {
     slug: "dolphin",
     name: "Dolphin",
     role: "Long-haul mains",
-    diameter: "12″–30″",
-    diameterCm: "30–75 cm",
+    diameter: "12\"-30\"",
+    diameterCm: "30-75 cm",
     pressure: "Up to 50 bar",
     distance: "Up to 10 km",
     image: "images/dolphin.jpg",
@@ -152,8 +152,8 @@ export const news = [
     body: "First European field pilot in Sicily.",
   },
   {
-    year: "2023–2025",
-    title: "Ministry of Energy grant — magnetic propulsion & acoustics",
+    year: "2023-2025",
+    title: "Ministry of Energy grant: magnetic propulsion and acoustics",
     body: "Fourth grant for the development of magnetic propulsion and acoustic communication, funded by the Ministry of Energy of Israel.",
   },
   {
@@ -169,11 +169,11 @@ export const news = [
   {
     year: "2023",
     title: "Kineret Conference",
-    body: "Presenting iPIPE’s innovations at the Kineret Conference.",
+    body: "Presenting iPIPE's innovations at the Kineret Conference.",
   },
   {
     year: "2023",
-    title: "Ministry of Energy grant — communications",
+    title: "Ministry of Energy grant: communications",
     body: "Grant for communication development funded by the Ministry of Energy of Israel.",
   },
   {
@@ -182,21 +182,21 @@ export const news = [
     body: "Third grant, funded by the Ministry of Defense of Israel.",
   },
   {
-    year: "2020–2021",
-    title: "Ministry of Science and Technology — second pilot grant",
+    year: "2020-2021",
+    title: "Ministry of Science and Technology: second pilot grant",
     body: "Second grant for a pilot, funded by the Ministry of Science and Technology of Israel.",
   },
   {
-    year: "2018–2019",
-    title: "Ministry of Science and Technology — first grant",
+    year: "2018-2019",
+    title: "Ministry of Science and Technology: first grant",
     body: "First grant for a pilot, funded by the Ministry of Science and Technology of Israel.",
   },
 ]
 
 export const faqs = [
   {
-    q: "What is iPIPE’s main focus?",
-    a: "iPIPE Ltd builds inspection and diagnostics for potable water distribution networks — so utilities can keep systems safe and efficient without taking them offline.",
+    q: "What is iPIPE's main focus?",
+    a: "iPIPE Ltd builds inspection and diagnostics for potable water distribution networks, so utilities can keep systems safe and efficient without taking them offline.",
   },
   {
     q: "How do the devices work?",
@@ -204,7 +204,7 @@ export const faqs = [
   },
   {
     q: "What can a survey find?",
-    a: "Leaks, corrosion, faulty welds, blockages, unauthorized connections, and unmapped network segments — plus location and integrity data for the inspected run.",
+    a: "Leaks, corrosion, faulty welds, blockages, unauthorized connections, and unmapped network segments, plus location and integrity data for the inspected run.",
   },
   {
     q: "What partnerships has iPIPE established?",
@@ -215,8 +215,8 @@ export const faqs = [
     a: "Multiple Israeli government grants supporting the technology, including from the Ministry of Science and Technology, the Ministry of Defense, and the Ministry of Energy.",
   },
   {
-    q: "What are the benefits of using iPIPE’s subs?",
-    a: "Real-time monitoring and detection, higher network safety, less water loss, and lower operational cost — because you repair what is actually failing instead of replacing blindly.",
+    q: "What are the benefits of using iPIPE's subs?",
+    a: "Real-time monitoring and detection, higher network safety, less water loss, and lower operational cost, because you repair what is actually failing instead of replacing blindly.",
   },
 ]
 

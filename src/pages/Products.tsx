@@ -37,7 +37,7 @@ export function Products() {
           </table>
         </div>
 
-        <div className="mt-14 space-y-16">
+        <div className="mt-16 space-y-24">
           {products.map((product, i) => (
             <Reveal key={product.slug}>
               <article
@@ -52,7 +52,7 @@ export function Products() {
                 </div>
                 <div>
                   <p className="text-xs tracking-[0.18em] text-muted uppercase">{product.role}</p>
-                  <h2 className="font-display mt-2 text-4xl">{product.name}</h2>
+                  <h2 className="mt-2 text-4xl font-semibold tracking-tight">{product.name}</h2>
                   <p className="mt-4 text-muted">{product.summary}</p>
                   <dl className="mt-8 grid grid-cols-3 gap-4">
                     <div>

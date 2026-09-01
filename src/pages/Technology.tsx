@@ -11,12 +11,12 @@ export function Technology() {
       <PageHero
         eyebrow="Our technology"
         title="Autonomous platforms that work inside live pipes."
-        body="iPIPE devices travel substantial distances, navigate independently, and stay in contact with an operator — while the water network stays pressurized and in service."
+        body="iPIPE devices travel substantial distances, navigate independently, and stay in contact with an operator, while the water network stays pressurized and in service."
       />
 
       <section className="mx-auto max-w-6xl px-6 py-24">
         <Reveal>
-          <h2 className="font-display text-4xl">Core capabilities</h2>
+          <h2 className="text-4xl font-semibold tracking-tight leading-[1.15]">Core capabilities</h2>
         </Reveal>
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
           {capabilities.map((item, i) => {
@@ -39,10 +39,10 @@ export function Technology() {
       <section className="bg-foam py-24">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 lg:grid-cols-2">
           <Reveal>
-            <h2 className="font-display text-4xl">What a survey can find</h2>
+            <h2 className="text-4xl font-semibold tracking-tight leading-[1.15]">What a survey can find</h2>
             <p className="mt-4 text-muted">
               The subs are sensor-carrying platforms. They inspect pipe and network condition,
-              system integrity, and location — in real time, without a shutdown.
+              system integrity, and location, in real time, without a shutdown.
             </p>
             <ul className="mt-8 grid grid-cols-2 gap-3">
               {detects.map((item) => (
@@ -71,7 +71,7 @@ export function Technology() {
                 <Brain className="text-water-deep" size={22} />
                 <h3 className="mt-4 text-xl font-semibold">New AI capabilities</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted">
-                  With AI, iPIPE can flag abnormalities in the pipe during inspection analysis —
+                  With AI, iPIPE can flag abnormalities in the pipe during inspection analysis,
                   turning raw sensor runs into decisions utilities can act on.
                 </p>
               </article>

@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="bg-abyss text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2">
-          <Logo onDark />
+          <Logo />
           <p className="mt-5 max-w-md text-sm leading-relaxed text-white/60">
             Wireless inspection subs that travel inside live, pressurized potable water networks.
             Diagnose first. Then decide what to replace.

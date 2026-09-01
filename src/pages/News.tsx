@@ -8,7 +8,7 @@ export function News() {
       <PageHero
         eyebrow="News"
         title="Pilots, programs, and grants."
-        body="Stay current on iPIPE’s work with utilities, government funding, and international innovation programs."
+        body="Stay current on iPIPE's work with utilities, government funding, and international innovation programs."
       />
 
       <section className="mx-auto max-w-3xl px-6 py-24">
