@@ -78,6 +78,7 @@ export const products = [
     diameterCm: "10-20 cm",
     pressure: "Up to 50 bar",
     distance: "Up to 1 km",
+    rangeKm: 1,
     image: "images/neptune.jpg",
     summary:
       "Built for smaller-diameter potable lines where space is tight and inspection still has to happen while the network is in use.",
@@ -90,6 +91,7 @@ export const products = [
     diameterCm: "20-30 cm",
     pressure: "Up to 50 bar",
     distance: "Up to 3 km",
+    rangeKm: 3,
     image: "images/koi.jpg",
     summary:
       "The workhorse for typical urban distribution diameters. Enough range and payload for routine condition surveys.",
@@ -102,6 +104,7 @@ export const products = [
     diameterCm: "30-75 cm",
     pressure: "Up to 50 bar",
     distance: "Up to 10 km",
+    rangeKm: 10,
     image: "images/dolphin.jpg",
     summary:
       "Long-distance inspection for larger mains. The laboratory video shows Dolphin traveling inside a pipe under test.",
