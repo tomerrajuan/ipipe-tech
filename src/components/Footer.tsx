@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { clearConsentChoice } from "../consent"
 import { company, nav } from "../data"
 import { Logo } from "./Nav"
 
@@ -53,9 +54,17 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <p className="mx-auto max-w-6xl px-6 py-6 text-xs text-white/40">
-          © {new Date().getFullYear()} {company.name}. All rights reserved.
-        </p>
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-6 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
+          <p>© {new Date().getFullYear()} {company.name}. All rights reserved.</p>
+          <p className="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <Link to="/privacy" className="hover:text-white">
+              Privacy policy
+            </Link>
+            <button type="button" className="hover:text-white" onClick={() => clearConsentChoice()}>
+              Cookie settings
+            </button>
+          </p>
+        </div>
       </div>
     </footer>
   )

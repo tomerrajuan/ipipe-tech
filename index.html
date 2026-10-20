@@ -6,6 +6,10 @@
     <link rel="apple-touch-icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
+      name="google-site-verification"
+      content="frJo7z3dHWXoQ5x-ktf5i0AEsHxj_ebuEpHtZwWKO0A"
+    />
+    <meta
       name="description"
       content="iPIPE Ltd builds wireless inspection subs that travel inside live, pressurized water networks, detecting leaks, corrosion, and faults without taking pipes out of service."
     />
@@ -17,6 +21,42 @@
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#04141c" />
     <title>iPIPE Ltd. Water pipe inspection from the inside</title>
+    <script>
+      (function () {
+        window.dataLayer = window.dataLayer || []
+        function gtag() {
+          window.dataLayer.push(arguments)
+        }
+        window.gtag = gtag
+
+        var host = window.location.hostname
+        var isLocalhost =
+          host === "localhost" ||
+          host === "127.0.0.1" ||
+          host === "::1" ||
+          host === "[::1]" ||
+          host.slice(-10) === ".localhost"
+
+        var initialConsent = "denied"
+        try {
+          var storedConsent = localStorage.getItem("ipipe.consent.v1")
+          if (storedConsent === "accepted" || storedConsent === "rejected") {
+            document.documentElement.classList.add("consent-decided")
+          }
+          if (!isLocalhost && storedConsent === "accepted") {
+            initialConsent = "granted"
+          }
+        } catch (e) {}
+
+        gtag("consent", "default", {
+          analytics_storage: initialConsent,
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          ad_personalization: "denied",
+          wait_for_update: 500,
+        })
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>

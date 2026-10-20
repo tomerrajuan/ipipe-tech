@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "redirects": [
+    { "source": "/about-us", "destination": "/about", "permanent": true },
+    { "source": "/our-products", "destination": "/products", "permanent": true },
+    { "source": "/our-technology", "destination": "/technology", "permanent": true },
+    { "source": "/contact-us", "destination": "/contact", "permanent": true }
+  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}

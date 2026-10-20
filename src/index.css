@@ -43,6 +43,10 @@ body {
     radial-gradient(ellipse 40% 40% at 80% 80%, rgba(26, 163, 143, 0.16), transparent 60%);
 }
 
+body:has(.cookie-banner) {
+  padding-bottom: 7rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
