@@ -8,9 +8,9 @@ import { Reveal } from "../motion"
 export function Home() {
   return (
     <>
-      <section className="relative grid h-svh max-h-svh grid-rows-[auto_minmax(0,1fr)_auto] overflow-hidden bg-abyss text-white">
+      <section className="relative grid min-h-svh min-w-0 grid-rows-[auto_minmax(0,1fr)_auto] overflow-x-clip bg-abyss text-white lg:h-svh">
         <div className="pointer-events-none absolute inset-0 water-glow" />
-        <div className="relative mx-auto w-full max-w-6xl px-6 pt-24 sm:pt-28">
+        <div className="relative mx-auto min-w-0 w-full max-w-6xl px-6 pt-24 sm:pt-28">
           <Reveal>
             <p className="text-xs font-semibold tracking-[0.22em] text-water uppercase">
               Innovative water solutions
@@ -38,14 +38,14 @@ export function Home() {
             </div>
           </Reveal>
         </div>
-        <div className="relative flex min-h-0 items-center justify-center px-6">
+        <div className="relative flex min-h-0 min-w-0 w-full items-center justify-center px-6 py-4">
           <img
             src={asset("images/submarine.webp")}
             alt="iPIPE inspection sub"
-            className="h-auto w-auto max-h-[min(46svh,420px)] max-w-4xl object-contain drop-shadow-[0_30px_80px_rgba(26,140,255,0.18)]"
+            className="h-auto w-auto max-h-[min(100%,42svh,420px)] max-w-full object-contain drop-shadow-[0_30px_80px_rgba(26,140,255,0.18)]"
           />
         </div>
-        <div className="relative border-t border-white/10">
+        <div className="relative min-w-0 border-t border-white/10">
           <div className="mx-auto grid max-w-6xl grid-cols-2 sm:grid-cols-4">
             {stats.map((item) => (
               <div key={item.label} className="px-6 py-5">
